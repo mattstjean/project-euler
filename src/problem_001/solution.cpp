@@ -11,6 +11,16 @@ long long solve_problem_001()
 {
   long long total_sum = 0;
 
+  int N = 1000;
+
+  for (int i = 0; i < N; ++i)
+  {
+    if (i % 3 == 0 || i % 5 == 0)
+    {
+      total_sum += i;
+    }
+  }
+
   return total_sum;
 }
 
