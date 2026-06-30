@@ -37,17 +37,17 @@ namespace EulerDiagnostics
     void print_formatted_time(double nanoseconds) const
     {
       std::cout << "Execution Time: ";
-      if (nanoseconds >= 1'000'000'000.0)
+      if (nanoseconds >= 1000000000.0)
       {
-        std::cout << (nanoseconds / 1'000'000'000.0) << " s" << std::endl;
+        std::cout << (nanoseconds / 1000000000.0) << " s" << std::endl;
       }
-      else if (nanoseconds >= 1'000'000.0)
+      else if (nanoseconds >= 1000000.0)
       {
-        std::cout << (nanoseconds / 1'000'000.0) << " ms" << std::endl;
+        std::cout << (nanoseconds / 1000000.0) << " ms" << std::endl;
       }
-      else if (nanoseconds >= 1'000.0)
+      else if (nanoseconds >= 1000.0)
       {
-        std::cout << (nanoseconds / 1'000.0) << " µs" << std::endl;
+        std::cout << (nanoseconds / 1000.0) << " µs" << std::endl;
       }
       else
       {
@@ -106,7 +106,7 @@ namespace EulerDiagnostics
       // If the algorithm exceeds 60-seconds, we issue a warning as Project Euler
       // stipulates that solutions should be efficient and not brute-force. And that
       // they should complete in a reasonable time frame.
-      if (duration_ns > 60'000'000'000.0)
+      if (duration_ns > 60000000000.0)
       {
         std::cerr << "[WARNING] Execution exceeded 60 seconds.";
       }

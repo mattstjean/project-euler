@@ -49,8 +49,8 @@ To maintain a pristine history, I follow a strict feature-branch workflow for ev
 
 ### Archives (001 - 050)
 
-* [ ✓ ] [Problem 1: Multiples of 3 and 5](./src/problem_001/) - Completed in 4.807 microseconds
-* [ ] [Problem 2: Even Fibonacci Numbers](./src/problem_002/)
+* [x] [Problem 1: Multiples of 3 and 5](./src/problem_001/) - 4.807 µs
+* [x] [Problem 2: Even Fibonacci Numbers](./src/problem_002/) - 14.127 µs
 * [ ] [Problem 3: Largest Prime Factor](./src/problem_003/)
 * [ ] [Problem 4: Largest Palindrome Product](./src/problem_004/)
 * [ ] [Problem 5: Smallest Multiple](./src/problem_005/)
