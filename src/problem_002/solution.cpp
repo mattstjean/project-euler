@@ -14,7 +14,6 @@ int next_fib_value(std::vector<long long> &values);
 long long solve_problem_002()
 {
   std::vector<long long> fib_values = {1, 2};
-  std::vector<long long> fib_even_values = {2};
   long long total_sum = 2;
   int limit = 4000000;
 
@@ -24,7 +23,6 @@ long long solve_problem_002()
     fib_values.emplace_back(nextVal);
     if (nextVal % 2 == 0)
     {
-      fib_even_values.emplace_back(nextVal);
       total_sum += nextVal;
     }
   }
